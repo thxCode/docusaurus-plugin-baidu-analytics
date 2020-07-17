@@ -25,10 +25,6 @@ module.exports = function (context) {
   return {
     name: 'docusaurus-plugin-baidu-analytics',
 
-    getClientModules() {
-      return isProd ? [path.resolve(__dirname, './analytics')] : [];
-    },
-
     injectHtmlTags() {
       if (!isProd) {
         return {};
